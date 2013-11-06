@@ -60,9 +60,6 @@
 {
     static NSString *CellIdentifier = @"CustomCellReuseID";
     EXCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[EXCustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
     
     // Configure the cell...
     //[cell.cellItemImage setImage:[UIImage imageNamed:@"glyphicons_428_podium"]];
